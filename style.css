@@ -102,7 +102,7 @@ img {
     color: var(--color-warning);
 }
 
-/* ================ NAVBAR ================ */
+/* =========================================================== NAVBAR ===================================================== */
 
 nav {
     width: 100%;
@@ -157,7 +157,7 @@ nav .container ul li a.active {
     color: var(--color-white);
 }
 
-/* ====================== LANDING PAGE ====================== */
+/* ===================================================== LANDING PAGE ======================================================== */
 section.landing {
     display: grid;
     place-items: center;
@@ -223,9 +223,16 @@ section.landing .profile-area .outer-circle {
     border: 1px solid var(--color-primary);
     border-radius: 50%;
     position: relative;
+    animation: move 30s linear infinite;
 }
 
-/* =======================CIRCLE ANIMATIONS=====================*/
+/* ==================CIRCLE ANIMATIONS==================*/
+@keyframes move {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 section.landing .profile-area .outer-circle span {
     display: block;
     width: 4rem;
@@ -240,7 +247,7 @@ section.landing .profile-area .outer-circle span {
     box-shadow: 0 0 1rem var(--color-primary-light);
 }
 
-/*======================TARGET EACH SPAN TO PLACE AROUND THE CIRCLE======================*/
+/*=============TARGET EACH SPAN TO PLACE AROUND THE CIRCLE==============*/
 section.landing .profile-area .outer-circle span:nth-child(1) {
     left: calc(50% - 2rem);
     top: -2rem;
