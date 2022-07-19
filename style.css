@@ -156,3 +156,44 @@ nav .container ul li a.active {
     background: var(--color-primary);
     color: var(--color-white);
 }
+
+/* ====================== LANDING PAGE ====================== */
+section.landing {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 5rem;
+    padding: 14rem;
+}
+
+section.landing .container {
+    display: grid;
+    grid-template-columns: 5rem auto 28rem;
+    gap: 2rem;
+}
+
+section.landing .socials{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin: 5rem;
+}
+
+section.landing .socials a {
+    font-size: 1.1rem;
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: 0.3rem;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+
+section.landing .socials a:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
