@@ -3,7 +3,7 @@
     --color-light: #f4f4f4;
     --color-dark: #525252;
     --color-black: #141415;
-    --color-primary: #f24e1e;
+    --color-primary: #f24e1e; /* #0390fc */
     --color-primary-light: hsl(14, 89%, 53%, 12%);
     --color-success: #29f5a6;
     --color-warning: #ffce31;
@@ -223,7 +223,7 @@ section.landing .profile-area .outer-circle {
     border: 1px solid var(--color-primary);
     border-radius: 50%;
     position: relative;
-    animation: move 30s linear infinite;
+    animation: move 30s linear infinite; /*====works with @keyframes to rotate circle====*/
 }
 
 /* ==================CIRCLE ANIMATIONS==================*/
@@ -269,5 +269,40 @@ section.landing .profile-area .outer-circle span:nth-child(4) {
 }
 
 section.landing .profile-area .inner-circle {
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* ===================== ABOUT SECTION =======================*/
+section.about {
+    background: var(--color-light);
+}
+
+section.about .container {
+    display: block;
+
+}
+
+/*============= Adjusts size of paragraphs, show more & btn =================*/
+section.about .info {
+    margin: auto 11rem 1rem;
+}
+
+/*============== JavaScript is used to actually show more ==============*/
+section.about .container .read-more-content {
     display: none;
+}
+
+section.about .container .read-more {
+    display: block;
+    margin: 1rem 0 2rem;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+section.about .container .read-more:hover {
+    text-decoration: underline;
 }
