@@ -286,9 +286,13 @@ section.about .container {
 
 }
 
-/*============= Adjusts size of paragraphs, show more & btn =================*/
+/*============= Adjusts size of paragraphs, Show More & btn =================*/
 section.about .info {
     margin: auto 11rem 1rem;
+}
+
+section.about p {
+    margin-bottom: 1rem;
 }
 
 /*============== JavaScript is used to actually show more ==============*/
@@ -305,4 +309,9 @@ section.about .container .read-more {
 
 section.about .container .read-more:hover {
     text-decoration: underline;
+}
+
+/*================== SKILLS ============== */
+section.skills .skill {
+    width: 10rem;
 }
