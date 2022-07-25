@@ -312,6 +312,17 @@ section.about .container .read-more:hover {
 }
 
 /*================== SKILLS ============== */
-section.skills .skill {
-    width: 10rem;
+section.skills .grid-skill {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.skills .icon {
+    width: 6rem;
+    height: auto;
+    margin: 2.4rem;
 }
