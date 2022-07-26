@@ -15,3 +15,22 @@ closeBtn.addEventListener('click', () => {
     menuBtn.style.display = 'inline-block';
     closeBtn.style.display = 'none';
 })
+
+const navItems = menu.querySelectorAll('li');
+
+//remove active class when clicked on other item
+const changeActiveItem = () => {
+    navItems.forEach(item => {
+        const link = item.querySelector('a');
+        link.classList.remove('active');
+    })
+}
+
+//add active class to clicked nav item
+navItems.forEach(item => {
+    const link = item.querySelector('a');
+    link.addEventListener('click', () => {
+        changeActiveItem();
+        link.classList.add('active');
+    })
+})
