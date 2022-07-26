@@ -47,3 +47,8 @@ readMoreBtn.addEventListener('click', () => {
         readMoreBtn.textContent = "Show more";
     }
 })
+
+// add box shadow on scroll
+window.addEventListener('scroll', () => {
+    document.querySelector('nav').classList.toggle('show-box-shadow', window.scrollY > 0)
+})
