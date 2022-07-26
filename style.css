@@ -21,6 +21,15 @@
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--color-primary-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
 html{
     font-size: 15px;
     scroll-behavior: smooth;
