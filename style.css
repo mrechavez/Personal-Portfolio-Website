@@ -99,7 +99,7 @@ img {
 
 .btn-primary {
     background: var(--color-primary);
-    color: var(--color-warning);
+    color: var(--color-white);
 }
 
 /* =========================================================== NAVBAR ===================================================== */
@@ -163,7 +163,7 @@ section.landing {
     place-items: center;
     position: relative;
     top: 5rem;
-    padding: 14rem;
+    padding-bottom: 14rem;
 }
 
 section.landing .container {
@@ -282,13 +282,9 @@ section.about {
 }
 
 section.about .container {
-    display: block;
-
-}
-
-/*============= Adjusts size of paragraphs, Show More & btn =================*/
-section.about .info {
-    margin: auto 11rem 1rem;
+    display: grid;
+    grid-template-columns: 26rem auto;
+    gap: 5rem;
 }
 
 section.about p {
@@ -385,7 +381,7 @@ section.services .container .service:nth-child(3) span {
     background: var(--color-success);
 }
 
-/* ==================== RECENT WORL (PORTFOLIO) =======================*/
+/* ==================== RECENT WORK (PORTFOLIO) =======================*/
 section.recent-work h1 {
     text-align: left;
     margin: 3rem 0 1rem;
@@ -543,7 +539,7 @@ footer .copyright {
 
 /* =======================MEDIA QUERIES (PHONES)======================*/
 @media screen and (max-width: 600px) {
-    h2 {
+    h1 {
         font-size: 2.2rem;
     }
 
@@ -564,9 +560,6 @@ footer .copyright {
     }
 
     /* =================== NAV BAR =================*/
-    nav {
-        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-    }
 
     nav h3 {
         margin-left: 1rem;
@@ -671,23 +664,29 @@ footer .copyright {
 
     section.landing .profile-area .outer-circle span:nth-child(1) {
         left: calc(50% - 1.5rem);
-        top: -2rem;
+        top: -1.5rem;
     }
     
     section.landing .profile-area .outer-circle span:nth-child(2) {
-        right: -2rem;
+        right: -1.5rem;
         top: calc(50% - 1.5rem);
     }
     
     section.landing .profile-area .outer-circle span:nth-child(3) {
-        left: -2rem;
+        left: -1.5rem;
         top: calc(50% - 1.5rem);
     }
     
     section.landing .profile-area .outer-circle span:nth-child(4) {
-        bottom: -2rem;
+        bottom: -1.5rem;
         left: calc(50% - 1.5rem);
     }
 
     /* ========================== ABOUT SECTION ===================== */
+    section.about .container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+
+    }
 }
