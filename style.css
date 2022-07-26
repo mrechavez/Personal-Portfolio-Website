@@ -537,7 +537,7 @@ footer .copyright {
     font-size: 0.8rem;
 }
 
-/* =======================MEDIA QUERIES (PHONES)======================*/
+/* ==================================== MEDIA QUERIES (PHONES) ================================================================*/
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 2.2rem;
@@ -557,6 +557,10 @@ footer .copyright {
 
     h5 {
         font-size: 0.68rem;
+    }
+
+    .container {
+        width: 94%;
     }
 
     /* =================== NAV BAR =================*/
@@ -687,6 +691,47 @@ footer .copyright {
         grid-template-columns: 1fr;
         gap: 1rem;
         text-align: center;
+    }
 
+    /* ========================== SKILLS SECTION ===================== */
+    section.skills .grid-skill {
+        grid-template-columns: 1fr;
+    }
+
+    /* ========================== SERVICES SECTION ===================== */
+    section.services .container {
+        grid-template-columns: 1fr;
+    }
+
+    /* ========================== PORTFOLIO SECTION ===================== */
+    section.recent-work .container .projects {
+        grid-template-columns: 1fr;
+    }
+
+    section.recent-work .container h1 {
+        width: 94vw;
+        margin: 1.4rem 0 1rem;
+    }
+
+    /* ========================== CONTACT SECTION ===================== */
+    section.contact .container {
+        width: 94vw;
+    }
+
+    section.contact .container p {
+        width: 80vw;
+        margin: 0.5rem auto 0;
+    }
+
+    /* ========================== FOOTER SECTION ===================== */
+    footer .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    footer .container ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.4rem;
     }
 }
