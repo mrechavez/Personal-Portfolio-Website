@@ -3,7 +3,8 @@
     --color-light: #f4f4f4;
     --color-dark: #525252;
     --color-black: #141415;
-    --color-primary: #f24e1e; /* #0390fc, #06BC9B */
+    --color-primary: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); /* #03adfc, #0390fc, #06BC9B */
+    --color-primary-no-gradient: #03adfc;
     --color-primary-light: hsl(14, 89%, 53%, 12%);
     --color-success: #29f5a6;
     --color-warning: #ffce31;
@@ -235,7 +236,7 @@ section.landing .profile-area {
 section.landing .profile-area .outer-circle {
     width: 26rem;
     height: 26rem;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-primary-no-gradient);
     border-radius: 50%;
     position: relative;
     animation: move 30s linear infinite; /*====works with @keyframes to rotate circle====*/
@@ -255,7 +256,7 @@ section.landing .profile-area .outer-circle span {
     border-radius: 50%;
     position: absolute;
     background: var(--color-white);
-    color: var(--color-primary);
+    color: var(--color-primary-no-gradient);
     display: flex;
     justify-content: center;
     align-items: center;
