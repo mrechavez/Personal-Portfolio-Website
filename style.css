@@ -330,6 +330,7 @@ section.about .container .read-more:hover {
 /*================== SKILLS SECTION ============== */
 section.skills .container {
     width: 50%;
+    padding-bottom: 10%;
 }
 
 section.skills .grid-skill {
@@ -358,6 +359,7 @@ section.skills .icon {
 /*========================= Services ===================*/
 section.services {
     background: var(--color-light);
+    padding-bottom: 10%;
 }
 
 section.services .container {
