@@ -5,7 +5,7 @@
     --color-black: #141415;
     --color-primary: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); /* #03adfc, #0390fc, #06BC9B */
     --color-primary-no-gradient: #03adfc;
-    --color-primary-light: hsl(14, 89%, 53%, 12%);
+    --color-primary-light: rgba(24, 111, 217, 0.185);
     --color-success: #29f5a6;
     --color-warning: #ffce31;
 
@@ -430,6 +430,11 @@ section.recent-work .projects .project {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+section.recent-work .projects .project p {
+    font-size: 1.05rem;
+    font-weight: 500;
 }
 
 section.recent-work .projects .project .action {
