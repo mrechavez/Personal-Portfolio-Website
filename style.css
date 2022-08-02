@@ -428,6 +428,10 @@ section.recent-work h1 {
     width: 65%;
 }
 
+section.recent-work h4 {
+    font-size: 1.4rem;
+}
+
 section.recent-work .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -544,6 +548,10 @@ footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+footer .container h3 {
+    color: var(--color-dark);
 }
 
 footer .container ul {
