@@ -161,10 +161,13 @@ nav .container ul li a {
     color: var(--color-black);
     position: relative;
     transition: var(--transition);
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
 
 nav .container ul li a:hover {
-    color: var(--color-primary);
+    color: var(--color-primary-no-gradient);
 }
 
 nav .container ul li a.active {
@@ -382,6 +385,10 @@ section.services .container .service {
     transition: var(--transition);
 }
 
+section.services .container .service p {
+    font-weight: 500;
+}
+
 section.services .container .service:hover {
     box-shadow: 0 3rem 3rem var(--color-primary-light);
 }
@@ -431,7 +438,9 @@ section.recent-work .projects .project .action {
 }
 
 section.recent-work .projects .project .action a {
-    color: var(--color-primary);
+    color: var(--color-primary-no-gradient);
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 section.recent-work .projects .project .action a:hover {
