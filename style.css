@@ -357,6 +357,7 @@ section.skills .item {
 
 section.skills .container .item:hover {
     box-shadow: 0 3rem 3rem var(--color-primary-light);
+    border: 1px solid rgba(24, 111, 217, 0.185);
 }
 
 section.skills h3 {
