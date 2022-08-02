@@ -8,6 +8,7 @@
     --color-primary-light: rgba(24, 111, 217, 0.185);
     --color-success: #29f5a6;
     --color-warning: #ffce31;
+    --color-original: #f24e1e;
 
     --transition: all 300ms ease;
 }
@@ -352,6 +353,10 @@ section.skills .item {
     box-shadow: 0 0 1rem var(--color-dark);
 }
 
+section.skills .container .item:hover {
+    box-shadow: 0 3rem 3rem var(--color-primary-light);
+}
+
 section.skills h3 {
     margin-bottom: 2.4rem;
 }
@@ -394,7 +399,7 @@ section.services .container .service:hover {
 }
 
 section.services .container .service span {
-    background: var(--color-primary);
+    background: var(--color-original);
     width: 4rem;
     height: 4rem;
     margin: 0 auto;
