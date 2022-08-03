@@ -789,6 +789,12 @@ footer .copyright {
         left: calc(50% - 1.5rem);
     }
 
+    /* ========================== INTRO ANIMATION ===================== */
+    .intro-text {
+        margin: auto;
+        padding-left: 5%;
+    }
+
     /* ========================== ABOUT SECTION ===================== */
     section.about .container {
         grid-template-columns: 1fr;
