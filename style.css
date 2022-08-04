@@ -802,6 +802,12 @@ footer .copyright {
         text-align: center;
     }
 
+    section.about p {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
     /* ========================== SKILLS SECTION ===================== */
     section.skills .grid-skill {
         grid-template-columns: 1fr;
