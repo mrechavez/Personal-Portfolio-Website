@@ -355,7 +355,7 @@ section.about .container {
 section.about p {
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /*============== JavaScript is used to actually show more ==============*/
@@ -805,7 +805,6 @@ footer .copyright {
     section.about p {
         margin-bottom: 1rem;
         font-size: 1.1rem;
-        font-weight: 500;
     }
 
     /* ========================== SKILLS SECTION ===================== */
